@@ -1,0 +1,83 @@
+@import '../../../styles/_color.scss';
+@import '../../../styles/_font_size.scss';
+.editFeaturedImage {
+  border: 0.25rem solid #d7dee1;
+  width: 100%;
+  background: #fff;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+  .uploadFile {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+  .deletePhoto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 0;
+    &:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+  }
+  &:hover {
+    .upload {
+      padding-bottom: 0.6rem;
+      background: rgba(73, 85, 95, 1);
+    }
+  }
+  &>div {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    .logo {
+      transform: translateY(-45%);
+      display: block;
+      position: absolute;
+      top: 45%;
+      img {
+        width: 70%;
+      }
+    }
+    .boxImage {
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-position: 50%;
+      background-size: cover;
+      &.noImage {
+        transform: translateY(-25%);
+        margin-top: 63%;
+        color: #d8d9da;
+      }
+    }
+    .upload {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border: 0;
+      outline: none;
+      font-size: $fontXS;
+      padding: 0.3rem;
+      color: $colorWhite;
+      background: rgba(73, 85, 95, 0.7);
+      &:hover {}
+    }
+  }
+}

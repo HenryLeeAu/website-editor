@@ -1,0 +1,211 @@
+@import '../../styles/_color.scss';
+@import '../../styles/_font_size.scss';
+@import '../../styles/_bodyStyle.scss';
+@mixin item {
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: $fontL;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding-top: 75%;
+}
+
+@mixin center {
+  text-align: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
+  display: block;
+}
+
+@mixin List {}
+
+@mixin HiddenButton {
+  &:hover {
+    .hideBtn {
+      opacity: 1;
+    }
+  }
+  .hideBtn {
+    opacity: 0;
+    transition-duration: 0.3s;
+    color: $colorBase;
+    @include center;
+    span {
+      background: rgba(255, 255, 255, 0.9);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      font-size: $fontL;
+      border-radius: 5px;
+    }
+  }
+}
+
+@mixin CreateTime {
+  .createTime {
+    color: $colorBaseLight;
+    font-size: $fontS;
+    font-style: italic;
+    padding: 0.5rem;
+    display: block;
+  }
+}
+
+@mixin TemplateName {
+  .templateName {
+    color: $colorBase;
+    font-weight: bold;
+  }
+}
+
+@mixin Clear {
+  li:nth-child(4n+1) {
+    clear: left;
+  }
+}
+
+@mixin CreateNew($bg, $bgHover, $border, $fontSize, $fontColor) {
+  a:first-child {
+    @include item;
+    border: $border;
+    background: $bg;
+    font-size: $fontSize;
+    color: $fontColor;
+    transition-duration: 0.3s;
+    &:hover {
+      background: $bgHover;
+    }
+    &>span {
+      @include center;
+      padding: 1rem;
+      &>span {
+        display: block;
+        font-size: 3.75rem;
+        font-weight: 100;
+        line-height: 0.7;
+      }
+    }
+  }
+}
+
+#lively-home {
+  @include bodyStyle;
+  .title {
+    .right {
+      &>div {
+        width: 250px;
+      }
+    }
+  }
+  .list {}
+}
+
+.projectListPageStyles {
+  .title {
+    padding-top: 2rem;
+  }
+  .list {
+    @include Clear;
+    .createProject {
+      @include CreateNew($colorPrimary, $colorPrimaryHover, 0, $fontXL, fontColor);
+      a:first-child {
+        color: #fff !important;
+      }
+    }
+    .createNewTemplate {
+      @include CreateNew(none, $colorWhite, 3px dashed #ccc, $fontM, $colorBase);
+      a:first-child {
+        padding-top: 73%;
+      }
+    }
+    .ListItem {
+      a {
+        @include item;
+        background: #ccc;
+        color: #fff !important;
+        font-size: $fontL;
+        &>div {
+          top: 0;
+          height: 100%;
+          width: 100%;
+          display: block;
+          position: absolute;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          background-size: cover;
+        }
+        .category {
+          font-size: $fontXS;
+          margin: 0.5rem;
+          border: 1px solid #fff;
+          padding: 0 0.5rem;
+        }
+        @include HiddenButton;
+        .nameSection {
+          position: absolute;
+          bottom: 0.5rem;
+          left: 0.5rem;
+          right: 0.5rem;
+        }
+      }
+      @include CreateTime;
+      @include TemplateName;
+    }
+  }
+}
+
+#createNewTemplate {
+  @include bodyStyle;
+  .previewContent {
+    position: absolute;
+    width: 90%;
+    max-width: 1024px;
+    height: 70%;
+    max-height: 650px;
+    background: #ccc;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    .close {
+      width: 2.7rem;
+      height: 2.7rem;
+      opacity: 0.7;
+      position: absolute;
+      background: none;
+      right: -2.7rem;
+      top: -2.7rem;
+      border: 0;
+      padding: 0.5rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        opacity: 1
+      }
+    }
+    .previewConfirmed {
+      position: absolute;
+      bottom: -4rem;
+      text-align: center;
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#lively-panelRHS {
+  @include bodyStyle;
+  h2 {
+    position: relative;
+    button {
+      margin: 0 1rem 0 0;
+    }
+  }
+}

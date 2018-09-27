@@ -1,0 +1,184 @@
+@import '../../styles/_color.scss';
+@import '../../styles/_font_size.scss';
+@import '../../styles/_bodyStyle.scss';
+.workPanelHeader {
+  @include bodyStyle;
+  .lively-right {
+    button {
+      width: 9.6867rem;
+    }
+  }
+  position: absolute;
+  display: table;
+  width: 100%;
+  z-index: 11000;
+  background: #5f6c77;
+  height: 4.375rem;
+  box-shadow:0px 2px 3px rgba(95, 108, 119, 0.51);
+  .lively-left {
+    .back {
+      display: block;
+      height: 100%;
+      user-select: none;
+      transition-duration: 0.3s;
+      &:hover {
+        background: #697784;
+      }
+      img {
+        height: 1.375rem;
+        margin: 1.4rem 1.5rem 0 1.5rem;
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+    .settings {
+      font-size: $fontL;
+      background: none;
+      color: #fff;
+      border: none;
+      max-width: 16.875rem;
+      text-align: left;
+      padding: 0.3rem;
+      border-radius: 0.1875rem;
+      margin-left: 0.5rem;
+      transition-duration: 0.3s;
+      min-width: 8rem;
+      min-height: 3rem;
+      &:hover {
+        background: #697784;
+      }
+    }
+  }
+  .right {
+    display: table;
+    height: inherit;
+    .saveStatus {
+      color: $colorPrimary;
+      span {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: rgba(54, 221, 176, 0.5);
+        border-radius: 50%;
+        padding: 2px;
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+        img {
+          width: 12px;
+          height: 12px;
+          margin-left: 2px;
+          margin-top: 2px;
+        }
+      }
+    }
+    button {
+      min-width: 10rem;
+    }
+  }
+}
+
+.workPanelWorkArea {
+  padding-top: 4.375rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #869296;
+  .mobilePreviewModeButton {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(208, 208, 208);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 3px 0px rgba(7, 7, 7, 0.24);
+    bottom: 2rem;
+    width: 66px;
+    height: 66px;
+    right: 2rem;
+    z-index: 15000;
+    cursor: pointer;
+    position: absolute;
+    &:focus {
+      outline: 0
+    }
+  }
+  .mobilePreviewModeBox {
+    background: #fff;
+    margin: 0 auto;
+    overflow-y: auto;
+  }
+  .lively-container,
+  .customerDynamicBox,
+  .customerLogo,
+  .customerSocialMedia,
+  .customerRotatingQuotes,
+  .customerButton,
+  .customerSingleQuote,
+  .customerImage,
+  .customerVideo,
+  .customerTest,
+  .customerCountainer {
+    position: relative;
+  }
+  .customerSocialMedia {
+    display: inline-block;
+  }
+}
+
+//TODO : make the template look like same as live style
+#customerTemplateWrap {
+  margin: 0 auto;
+  img {
+    display: block;
+  }
+}
+
+//TODO : sameple cusomer template code, will be handle by server
+#customerTemplate {
+  background: #fff;
+}
+
+.rdt {
+  input {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    position: absolute;
+    border-color: transparent;
+    background: transparent;
+    cursor: pointer;
+    color: transparent;
+    z-index: 101;
+    &:focus {
+      outline: 0;
+    }
+  }
+  &.rdtOpen {
+    input {
+      z-index: 99;
+    }
+  }
+  .rdtPicker {
+    box-shadow: 0px 0px 1px rgba(68, 82, 95, 0.6);
+    top: 37px;
+  }
+  .rdtPicker td.rdtActive,
+  .rdtPicker td.rdtActive:hover {
+    background: #36ddb0
+  }
+  .rdtPicker td.rdtToday:before {
+    border-bottom-color: #36ddb0;
+  }
+  .rdtPicker td,
+  .rdtPicker th {
+    vertical-align: middle;
+  }
+}
+
+idg-container {
+  display: block;
+  position: relative;
+}

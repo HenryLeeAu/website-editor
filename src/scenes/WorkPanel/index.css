@@ -1,0 +1,566 @@
+.workPanelHeader {
+  font-size: 1rem;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #666666;
+  line-height: 1.5;
+  position: absolute;
+  display: table;
+  width: 100%;
+  z-index: 11000;
+  background: #5f6c77;
+  height: 4.375rem;
+  box-shadow: 0px 2px 3px rgba(95, 108, 119, 0.51);
+}
+
+.workPanelHeader applet,
+.workPanelHeader object,
+.workPanelHeader iframe,
+.workPanelHeader h1,
+.workPanelHeader h2,
+.workPanelHeader h3,
+.workPanelHeader h4,
+.workPanelHeader h5,
+.workPanelHeader h6,
+.workPanelHeader p,
+.workPanelHeader blockquote,
+.workPanelHeader pre,
+.workPanelHeader abbr,
+.workPanelHeader acronym,
+.workPanelHeader address,
+.workPanelHeader big,
+.workPanelHeader cite,
+.workPanelHeader code,
+.workPanelHeader del,
+.workPanelHeader dfn,
+.workPanelHeader em,
+.workPanelHeader img,
+.workPanelHeader ins,
+.workPanelHeader kbd,
+.workPanelHeader q,
+.workPanelHeader s,
+.workPanelHeader samp,
+.workPanelHeader small,
+.workPanelHeader strike,
+.workPanelHeader strong,
+.workPanelHeader sub,
+.workPanelHeader sup,
+.workPanelHeader tt,
+.workPanelHeader var,
+.workPanelHeader b,
+.workPanelHeader u,
+.workPanelHeader i,
+.workPanelHeader center,
+.workPanelHeader dl,
+.workPanelHeader dt,
+.workPanelHeader dd,
+.workPanelHeader ol,
+.workPanelHeader ul,
+.workPanelHeader li,
+.workPanelHeader fieldset,
+.workPanelHeader form,
+.workPanelHeader legend,
+.workPanelHeader table,
+.workPanelHeader caption,
+.workPanelHeader tbody,
+.workPanelHeader tfoot,
+.workPanelHeader thead,
+.workPanelHeader tr,
+.workPanelHeader th,
+.workPanelHeader td,
+.workPanelHeader article,
+.workPanelHeader aside,
+.workPanelHeader canvas,
+.workPanelHeader details,
+.workPanelHeader embed,
+.workPanelHeader figure,
+.workPanelHeader figcaption,
+.workPanelHeader footer,
+.workPanelHeader header,
+.workPanelHeader hgroup,
+.workPanelHeader menu,
+.workPanelHeader nav,
+.workPanelHeader output,
+.workPanelHeader ruby,
+.workPanelHeader section,
+.workPanelHeader summary,
+.workPanelHeader time,
+.workPanelHeader mark,
+.workPanelHeader audio,
+.workPanelHeader video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.workPanelHeader article,
+.workPanelHeader aside,
+.workPanelHeader details,
+.workPanelHeader figcaption,
+.workPanelHeader figure,
+.workPanelHeader footer,
+.workPanelHeader header,
+.workPanelHeader hgroup,
+.workPanelHeader menu,
+.workPanelHeader nav,
+.workPanelHeader section {
+  display: block;
+}
+
+.workPanelHeader blockquote:before,
+.workPanelHeader blockquote:after,
+.workPanelHeader q:before,
+.workPanelHeader q:after {
+  content: '';
+  content: none;
+}
+
+.workPanelHeader table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.workPanelHeader ol,
+.workPanelHeader ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workPanelHeader blockquote,
+.workPanelHeader q {
+  quotes: none;
+}
+
+.workPanelHeader ::selection {
+  background: #36ddb0;
+  color: #fff;
+}
+
+.workPanelHeader ::-moz-selection {
+  background: #36ddb0;
+  color: #fff;
+}
+
+.workPanelHeader .cf:before,
+.workPanelHeader .cfix:before,
+.workPanelHeader .cf:after,
+.workPanelHeader .cfix:after {
+  content: " ";
+  display: table;
+}
+
+.workPanelHeader .cf:after,
+.workPanelHeader .cfix:after {
+  clear: both;
+}
+
+.workPanelHeader .cf,
+.workPanelHeader .cfix {
+  *zoom: 1;
+}
+
+.workPanelHeader .lively-left {
+  float: left;
+}
+
+.workPanelHeader .lively-right {
+  float: right;
+}
+
+.workPanelHeader button {
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.workPanelHeader button:focus {
+  outline: 0;
+}
+
+.workPanelHeader textarea {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.5rem;
+  color: #666666;
+}
+
+.workPanelHeader .lively-table {
+  display: table;
+  height: inherit;
+}
+
+.workPanelHeader .lively-table>div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.workPanelHeader h2 {
+  font-size: 1.375rem;
+}
+
+.workPanelHeader h1 {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.workPanelHeader .lively-p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.workPanelHeader .wrap {
+  padding: 1rem;
+}
+
+.workPanelHeader .colorWarning {
+  color: #36ddb0;
+}
+
+.workPanelHeader .colorSecondary {
+  color: #49555f;
+}
+
+.workPanelHeader .colorWarning {
+  color: #f8699f;
+}
+
+.workPanelHeader .fontS {
+  font-size: 0.875rem;
+}
+
+.workPanelHeader .fontM {
+  font-size: 1rem;
+}
+
+.workPanelHeader .fontL {
+  font-size: 1.125rem;
+}
+
+.workPanelHeader .fontXL {
+  font-size: 1.375rem;
+}
+
+.workPanelHeader .lively-inlineBlock {
+  display: inline-block;
+}
+
+.workPanelHeader .block {
+  display: block;
+}
+
+.workPanelHeader .inlineText {
+  display: inline;
+}
+
+.workPanelHeader .alignLeft {
+  text-align: left;
+}
+
+.workPanelHeader .alignCenter {
+  text-align: center;
+}
+
+.workPanelHeader .alignRight {
+  text-align: right;
+}
+
+.workPanelHeader .clear {
+  clear: both;
+}
+
+.workPanelHeader .lively-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.workPanelHeader [class*="col-"] {
+  float: left;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.workPanelHeader .col-1 {
+  width: 8.33%;
+}
+
+.workPanelHeader .col-2 {
+  width: 16.66%;
+}
+
+.workPanelHeader .col-3 {
+  width: 25%;
+}
+
+.workPanelHeader .col-4 {
+  width: 33.33%;
+}
+
+.workPanelHeader .col-5 {
+  width: 41.66%;
+}
+
+.workPanelHeader .col-6 {
+  width: 50%;
+}
+
+.workPanelHeader .col-7 {
+  width: 58.33%;
+}
+
+.workPanelHeader .col-8 {
+  width: 66.66%;
+}
+
+.workPanelHeader .col-9 {
+  width: 75%;
+}
+
+.workPanelHeader .col-10 {
+  width: 83.33%;
+}
+
+.workPanelHeader .col-11 {
+  width: 91.66%;
+}
+
+.workPanelHeader .col-12 {
+  width: 100%;
+}
+
+.workPanelHeader .pull-1 {
+  margin-left: 8.33%;
+}
+
+.workPanelHeader .padd {
+  padding: 0.5rem;
+}
+
+.workPanelHeader .paddL {
+  padding: 1rem;
+}
+
+.workPanelHeader .upperCase {
+  text-transform: uppercase;
+}
+
+.workPanelHeader .relative {
+  position: relative;
+}
+
+.workPanelHeader a {
+  color: #36ddb0;
+  text-decoration: none;
+}
+
+.workPanelHeader a:hover {
+  color: #2cbb94;
+}
+
+.workPanelHeader select:focus {
+  outline: none;
+}
+
+.workPanelHeader .section {
+  border-bottom: 1px solid #dde4e6;
+  margin-right: -1rem;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.workPanelHeader .section h3 {
+  font-weight: bold;
+}
+
+.workPanelHeader .section .padd {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.workPanelHeader .lively-right button {
+  width: 9.6867rem;
+}
+
+.workPanelHeader .lively-left .back {
+  display: block;
+  height: 100%;
+  user-select: none;
+  transition-duration: 0.3s;
+}
+
+.workPanelHeader .lively-left .back:hover {
+  background: #697784;
+}
+
+.workPanelHeader .lively-left .back img {
+  height: 1.375rem;
+  margin: 1.4rem 1.5rem 0 1.5rem;
+}
+
+.workPanelHeader .lively-left .back img svg {
+  fill: #fff;
+}
+
+.workPanelHeader .lively-left .settings {
+  font-size: 1.125rem;
+  background: none;
+  color: #fff;
+  border: none;
+  max-width: 16.875rem;
+  text-align: left;
+  padding: 0.3rem;
+  border-radius: 0.1875rem;
+  margin-left: 0.5rem;
+  transition-duration: 0.3s;
+  min-width: 8rem;
+  min-height: 3rem;
+}
+
+.workPanelHeader .lively-left .settings:hover {
+  background: #697784;
+}
+
+.workPanelHeader .right {
+  display: table;
+  height: inherit;
+}
+
+.workPanelHeader .right .saveStatus {
+  color: #36ddb0;
+}
+
+.workPanelHeader .right .saveStatus span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: rgba(54, 221, 176, 0.5);
+  border-radius: 50%;
+  padding: 2px;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.workPanelHeader .right .saveStatus span img {
+  width: 12px;
+  height: 12px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.workPanelHeader .right button {
+  min-width: 10rem;
+}
+
+.workPanelWorkArea {
+  padding-top: 4.375rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #869296;
+}
+
+.workPanelWorkArea .mobilePreviewModeButton {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0d0d0;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 2px 3px 0px rgba(7, 7, 7, 0.24);
+  bottom: 2rem;
+  width: 66px;
+  height: 66px;
+  right: 2rem;
+  z-index: 15000;
+  cursor: pointer;
+  position: absolute;
+}
+
+.workPanelWorkArea .mobilePreviewModeButton:focus {
+  outline: 0;
+}
+
+.workPanelWorkArea .mobilePreviewModeBox {
+  background: #fff;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.workPanelWorkArea .lively-container,
+.workPanelWorkArea .customerDynamicBox,
+.workPanelWorkArea .customerLogo,
+.workPanelWorkArea .customerSocialMedia,
+.workPanelWorkArea .customerRotatingQuotes,
+.workPanelWorkArea .customerButton,
+.workPanelWorkArea .customerSingleQuote,
+.workPanelWorkArea .customerImage,
+.workPanelWorkArea .customerVideo,
+.workPanelWorkArea .customerTest,
+.workPanelWorkArea .customerCountainer {
+  position: relative;
+}
+
+.workPanelWorkArea .customerSocialMedia {
+  display: inline-block;
+}
+
+#customerTemplateWrap {
+  margin: 0 auto;
+}
+
+#customerTemplateWrap img {
+  display: block;
+}
+
+#customerTemplate {
+  background: #fff;
+}
+
+.rdt input {
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  position: absolute;
+  border-color: transparent;
+  background: transparent;
+  cursor: pointer;
+  color: transparent;
+  z-index: 101;
+}
+
+.rdt input:focus {
+  outline: 0;
+}
+
+.rdt.rdtOpen input {
+  z-index: 99;
+}
+
+.rdt .rdtPicker {
+  box-shadow: 0px 0px 1px rgba(68, 82, 95, 0.6);
+  top: 37px;
+}
+
+.rdt .rdtPicker td.rdtActive,
+.rdt .rdtPicker td.rdtActive:hover {
+  background: #36ddb0;
+}
+
+.rdt .rdtPicker td.rdtToday:before {
+  border-bottom-color: #36ddb0;
+}
+
+.rdt .rdtPicker td,
+.rdt .rdtPicker th {
+  vertical-align: middle;
+}
+
+idg-container {
+  display: block;
+  position: relative;
+}
